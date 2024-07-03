@@ -8,7 +8,7 @@ Before start running the workflow, please ensure that the following software is 
 - Bismark (>=0.24.2)  
 ## Installation
 ```
-git clone 
+git clone https://github.com/axxxxx08/WGBS.git
 ```
 
 ## Usages
@@ -41,5 +41,6 @@ If there are no problems:
 snakemake -s workflow/Snakefile -c cores
 ```
 **Notes:**
-- Check the cpu numbers of your server, and choose proper cores and threads when running snakemake, the threads could be changed manually in the config file
-- Choose proper parameters of each step, it can be manually changed in files in 
+- Check the number of CPUs on your server, and choose appropriate cores and threads when running Snakemake. The threads can be manually adjusted in the config file.
+- Choose proper parameters for each step; these can be manually changed in the `.smk` files within the `workflow/rules` directory.
+- Verify the config file to ensure the correct paths of output directory, sample file, and reference genome are specified.
