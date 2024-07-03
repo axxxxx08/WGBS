@@ -1,8 +1,8 @@
-outdir: /home/liuxin/data_pasteur/12_epigenome/1.Samples
-ref: /home/liuxin/data_pasteur/12_epigenome/CHM13_ref
-sample: /home/liuxin/data_pasteur/12_epigenome/sample_10.txt
+outdir: /mnt/nfs2_external/rscc/home/liuxin/3.second_batch_WGBS
+ref: /mnt/nfs1_external/rsaa/home/liuxin/data_pasteur/12_epigenome/CHM13_ref
+sample: /mnt/nfs2_external/rscc/home/liuxin/3.second_batch_WGBS/sample_2.txt
 threads:
-  bis_align: 8
-  bis_call: 12
-  bis_dedul: 12
-  soapnuke: 24
+  bis_align: 18
+  bis_call: 18
+  bis_dedul: 18
+  soapnuke: 18

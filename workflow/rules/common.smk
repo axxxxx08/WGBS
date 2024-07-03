@@ -4,7 +4,7 @@ import os
 import argparse
 import sys
 
-configfile: "/home/liuxin/data_pasteur/12_epigenome/WGBS/workflow/config/config.yaml"
+configfile: "/mnt/nfs1_external/rsaa/home/liuxin/data_pasteur/12_epigenome/WGBS/workflow/config/config.yaml"
 
 def parse_samples(samples_tsv):
     return pd.read_csv(samples_tsv, sep='\t').set_index("id", drop=False)
@@ -15,7 +15,7 @@ def get_path(sample_df, wildcards, col):
 samples_df = parse_samples(config["sample"])
 
 
-OUTPUT_DIR = config["outdir"]
+#OUTPUT_DIR = config["outdir"]
 REFERENCE_DIR = config["ref"]
 SAMPLES = samples_df['id'].tolist()
 

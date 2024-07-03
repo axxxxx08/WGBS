@@ -6,11 +6,10 @@ include: "rules/common.smk"
 
 rule all:
     input:
-        expand(f"{OUTPUT_DIR}/4.bismark_methylation/{{sample}}", sample=SAMPLES)
+        directory(expand(os.path.join(config["outdir"], "4.bismark_methylation", "{sample}"), sample=SAMPLES))
 
 
 ##### Modules #####
-
 
 include: "rules/filter.smk"
 include: "rules/align.smk"
