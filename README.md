@@ -1,4 +1,4 @@
-# A simple workflow for whole-genome bisulfite sequencing (WGBS) data analysis
+# A snakemake workflow for basic whole-genome bisulfite sequencing (WGBS) data analysis
 
 ## Requirements
 Before start running the workflow, please ensure that the following software is installed in your environment:
